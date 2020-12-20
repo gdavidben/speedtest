@@ -20,7 +20,7 @@ public class ConfigurationModel {
 		
 		String expectedSpeed = properties.getProperty("expected-speed");
 		
-		if(expectedSpeed != null && !expectedSpeed.isBlank() && !expectedSpeed.isEmpty()) {
+		if(expectedSpeed != null && !expectedSpeed.isEmpty()) {
 			this.expectedSpeed = Integer.valueOf(expectedSpeed);
 		} else {
 			this.expectedSpeed = 10;
@@ -28,7 +28,7 @@ public class ConfigurationModel {
 		
 		String testUpload = properties.getProperty("test-upload");
 		
-		if(testUpload != null && !testUpload.isBlank() && !testUpload.isEmpty()) {
+		if(testUpload != null && !testUpload.isEmpty()) {
 			this.testUpload = Boolean.valueOf(testUpload);
 		} else {
 			this.testUpload = true;
@@ -44,7 +44,7 @@ public class ConfigurationModel {
 		
 		String internval = properties.getProperty("internval");
 		
-		if(internval != null && !internval.isBlank() && !internval.isEmpty()) {
+		if(internval != null && !internval.isEmpty()) {
 			this.internval = Integer.valueOf(internval);
 		} else {
 			this.internval = 1000 * 60 * 5;
@@ -52,7 +52,7 @@ public class ConfigurationModel {
 		
 		String socketTimeout = properties.getProperty("socket-timeout");
 		
-		if(socketTimeout != null && !socketTimeout.isBlank() && !socketTimeout.isEmpty()) {
+		if(socketTimeout != null && !socketTimeout.isEmpty()) {
 			this.socketTimeout = Integer.valueOf(socketTimeout);
 		} else {
 			this.socketTimeout = SOCKET_TIMEOUT;

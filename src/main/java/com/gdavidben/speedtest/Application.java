@@ -19,7 +19,7 @@ public class Application {
 		while (true) {
 			startDownload(config);
 			startUpload(config);
-			Thread.sleep(config.getInternval() + (60 * 1000));
+			Thread.sleep(config.getInternval() * (60 * 1000));
 		}
 	}
 
