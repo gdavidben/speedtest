@@ -20,8 +20,8 @@
 	</dependencies>
 
 	<scm>
-        <connection>scm:git:github.com/gdavidben/speedtest</connection>
-        <developerConnection>scm:git:github.com/gdavidben/speedtest</developerConnection>
+        <connection>scm:git:${project.scm.url}</connection>
+        <developerConnection>scm:git:${project.scm.url}</developerConnection>
         <url>git@github.com:gdavidben/speedtest.git</url>
         <tag>HEAD</tag>
     </scm>
